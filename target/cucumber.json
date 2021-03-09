@@ -1,0 +1,88 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-03-09T05:18:25.157Z",
+        "before": [
+          {
+            "result": {
+              "duration": 855879728,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Login_Step.setup()"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "Positive scenario to test login functinonality",
+        "description": "",
+        "id": "login-into-swiggy-website;positive-scenario-to-test-login-functinonality;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 37227,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Login_Step.teardown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2600313142,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User has opened swiggy website on Chrome Browser",
+            "match": {
+              "location": "Login_Step.user_has_opened_swiggy_website_on_chrome_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5232350077,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User enters correct \"9986030084\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "9986030084",
+                  "offset": 21
+                }
+              ],
+              "location": "Login_Step.user_enters_correct_something(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 485691,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user should be able to login successfully",
+            "match": {
+              "location": "Login_Step.user_should_be_able_to_login_successfully()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Login into swiggy website",
+    "description": "",
+    "id": "login-into-swiggy-website",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/LoginPage.feature",
+    "tags": []
+  }
+]
